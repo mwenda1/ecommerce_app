@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
 import '../screens/products_overview_screen.dart';
-// import '../views/account/sign_up_view.dart';
+import '../screens/product_detail_screen.dart';
 // import '../views/businesses/create_business_view.dart';
 // import '../views/categories/category_details_page.dart';
 // import '../views/home_view.dart';
@@ -9,6 +9,7 @@ import '../screens/products_overview_screen.dart';
 
 class Routes {
   static var home = '/',
+      productDetail = '/product/detail',
       signIn = '/account/signIn',
       signUp = '/account/signUp',
       createBusiness = '/business/new',
@@ -17,7 +18,7 @@ class Routes {
 
   static var pages = [
     GetPage(name: home, page: () => ProductsOverviewScreen()),
-    // GetPage(name: signIn, page: () => SignInView()),
+    GetPage(name: productDetail, page: () => ProductDetailScreen()),
     // GetPage(name: signUp, page: () => SignUpView()),
     // GetPage(name: createBusiness, page: () => CreateBusinessView()),
     // GetPage(name: createProduct, page: () => CreateProductView()),
